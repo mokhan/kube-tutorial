@@ -14,3 +14,8 @@ webapp   1/1     1            1           21s
 NAME                     READY   STATUS    RESTARTS   AGE
 webapp-c7c56d6dc-l2lkn   1/1     Running   0          37s
 ```
+
+```bash
+モ kubectl expose deployment webapp --type=LoadBalancer --port=8080 --target-port=5000
+service/webapp exposed
+```
